@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="title-cont">
+            <div style="text-align:center; margin: 4rem 0 0 0;" class="display-4">An Amazing Blog</div>
+            <p class="tagline">By <a href="https://devibrahim.imfast.io" target="_blank">Syed Anees Ibrahim.</a></p>
+        </div>
+        <div class="posts">
+            
+        </div>
+    </div>
+
+
+<script>
+
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyD3B3NGv2o920t2TSbiOMIeLmCjcqKEIIA",
+        authDomain: "some-random-blog.firebaseapp.com",
+        databaseURL: "https://some-random-blog.firebaseio.com",
+        projectId: "some-random-blog",
+        storageBucket: "some-random-blog.appspot.com",
+        messagingSenderId: "7908160732",
+        appId: "1:7908160732:web:080ef4a32f3d59723cb019"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+
+</script>
+<script src="script.js"></script>
+</body>
+</html>
